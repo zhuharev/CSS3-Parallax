@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>CSS3 Parallax by benceg</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>CSS3 Parallax</h1>
+          <h2>Plain JavaScript and CSS 3 Parallax effect</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/benceg/CSS3-Parallax/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/benceg/CSS3-Parallax/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/benceg/CSS3-Parallax" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>
+<a name="css3-parallax" class="anchor" href="#css3-parallax"><span class="octicon octicon-link"></span></a>CSS3-Parallax</h1>
+
+<p>Plain JavaScript and CSS3 Parallax</p>
+
+<h2>
+<a name="why" class="anchor" href="#why"><span class="octicon octicon-link"></span></a>Why?</h2>
+
+<p>I grew tired of having to use jQuery to manage the simple CSS manipulation of DOM elements. As useful as the library is, it's bloated for most of my own purposes.</p>
+
+<p><em>No developer should be required to install a large JavaScript library for mere DOM manipulation!</em></p>
+
+<p>Very few (if any) plain JavaScript parallax scripts exist that support both 3D perspective-enhanced viewing as well as 2D parallax.</p>
+
+<p>Enter <strong>CSS3-Parallax</strong>, the vanilla gorilla of parallax scripts.</p>
+
+<h2>
+<a name="browser-compatibility" class="anchor" href="#browser-compatibility"><span class="octicon octicon-link"></span></a>Browser Compatibility</h2>
+
+<p>Desktop only as the script relies on cursor movement.
+<em>TODO: Add device orientation event listeners for mobile devices.</em></p>
+
+<ul>
+<li>IE 9+</li>
+<li>Chrome 35+*</li>
+<li>Firefox 29+*</li>
+</ul><p><em>* indicates latest at time of writing</em></p>
+
+<p>All other browsers are currently untested. Please feel free to submit a pull request, test and update the codebase &amp; documentation as you please.</p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<h4>
+<a name="basic-usage" class="anchor" href="#basic-usage"><span class="octicon octicon-link"></span></a>Basic usage:</h4>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">Parallax</span><span class="p">(</span><span class="s1">'#picture'</span><span class="p">);</span>
+</pre></div>
+
+<h4>
+<a name="all-parameters-defaults-below" class="anchor" href="#all-parameters-defaults-below"><span class="octicon octicon-link"></span></a>All parameters (defaults below):</h4>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">Parallax</span><span class="p">(</span>
+  <span class="s1">'#picture'</span><span class="p">,</span> <span class="c1">// DOM node</span>
+  <span class="p">{</span>
+    <span class="nx">mode</span>      <span class="o">:</span> <span class="s1">'2D'</span> <span class="c1">// {string} '2D' or '3D', the type of parallax transformation used</span>
+    <span class="nx">speed</span>     <span class="o">:</span> <span class="mi">100</span><span class="p">,</span> <span class="c1">// {number} Movement velocity of 2D Parallax elements relative to the mouse</span>
+    <span class="nx">degrees</span>   <span class="o">:</span> <span class="mi">20</span><span class="p">,</span>  <span class="c1">// {number} Determines the angle through which to rotate 3D Parallax elements</span>
+    <span class="nx">vendors</span>   <span class="o">:</span> <span class="p">[</span><span class="s1">'webkit'</span><span class="p">,</span> <span class="s1">'moz'</span><span class="p">,</span> <span class="s1">'o'</span><span class="p">,</span> <span class="s1">'ms'</span><span class="p">],</span> <span class="c1">// {array} Browser-specific CSS3 prefixes</span>
+    <span class="nx">hardware</span>  <span class="o">:</span> <span class="kc">true</span> <span class="c1">// {boolean} Set to false if IE9 support is required for 2D transformations </span>
+  <span class="p">}</span>
+<span class="p">);</span>
+</pre></div>
+
+<h2>
+<a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h2>
+
+<h4>
+<a name="coming-soon" class="anchor" href="#coming-soon"><span class="octicon octicon-link"></span></a>Coming soon!</h4>
+        </section>
+
+        <footer>
+          CSS3 Parallax is maintained by <a href="https://github.com/benceg">benceg</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
