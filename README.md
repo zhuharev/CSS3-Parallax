@@ -1,7 +1,7 @@
 CSS3-Parallax
 =============
 
-Plain JavaScript and CSS3 Parallax
+Plain JavaScript and CSS3 Parallax that chases your mouse around the screen.
 
 ## Why?
 
@@ -43,6 +43,7 @@ Parallax(
     speed     : 100, // {number} Movement velocity of 2D Parallax elements relative to the mouse
     degrees   : 20,  // {number} Determines the angle through which to rotate 3D Parallax elements
     vendors   : ['webkit', 'moz', 'o', 'ms'], // {array} Browser-specific CSS3 prefixes
+    reverse   : true // {boolean} Whether to move 2D parallaxed items away from or towards the mouse
     hardware  : true // {boolean} Set to false if IE9 support is required for 2D transformations 
   }
 );
