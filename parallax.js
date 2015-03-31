@@ -169,7 +169,7 @@ var Parallax = (function(node, settings) {
           degree    = (radius * this.settings.degrees);
 
           // Create vendor-specific CSS array
-          for(i; i < this.settings.vendorsLength; i++) {
+          for(var i = 0; i < this.settings.vendorsLength; i++) {
             cssArray.push((this.settings.vendors[i] ? '-' + this.settings.vendors[i] + '-' : '' ) + 'transform: rotate3d(' + tiltX + ', ' + tiltY + ', 0, ' + degree + 'deg);');
           }
 
@@ -194,7 +194,7 @@ var Parallax = (function(node, settings) {
           }
 
           // Create vendor-specific CSS array
-          for(i; i < this.settings.vendorsLength; i++) {
+          for(var i = 0; i < this.settings.vendorsLength; i++) {
             cssArray.push((this.settings.vendors[i] ? '-' + this.settings.vendors[i] + '-' : '' ) + 'transform: ' + this.settings.translate + '(' + moveX + 'px, ' + moveY + 'px' + (this.settings.hardware === true ? ', 0' : '') + ');');
           }
 
